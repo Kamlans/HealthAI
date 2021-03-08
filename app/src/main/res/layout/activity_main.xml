@@ -95,46 +95,6 @@
         </LinearLayout>
 
 
-        <RadioGroup
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal"
-            android:padding="10dp"
-            >
-
-            <RadioButton
-                android:id="@+id/PharmacistRadioButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pharmacist"
-                android:layout_margin="5dp"/>
-
-            <RadioButton
-                android:id="@+id/PathologistRadioButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Pathologist"
-                android:layout_margin="5dp"/>
-            <RadioButton
-                android:id="@+id/UserRadioButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="User"
-                android:layout_margin="5dp"/>
-            <RadioButton
-                android:id="@+id/DoctorRadioButton"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="Doctor"
-                android:layout_margin="5dp"/>
-
-        </RadioGroup>
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="click to continue"
-            android:layout_gravity="center"/>
 
         <TextView
             android:layout_width="wrap_content"
@@ -142,7 +102,10 @@
             android:id="@+id/newUser"
             android:text="New User ? "
             android:layout_gravity="end"/>
-
+<Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/LoginButton"/>
 
 
 
