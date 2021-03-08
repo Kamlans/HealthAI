@@ -7,12 +7,148 @@
     tools:context=".MainActivity">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:text="Welcome to Health AI"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.203" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <EditText
+            android:id="@+id/passwordAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter your email address"
+            tools:layout_editor_absoluteX="2dp"
+            tools:layout_editor_absoluteY="261dp" />
+
+        <EditText
+            android:id="@+id/emailAdress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter password"
+            tools:layout_editor_absoluteX="1dp"
+            tools:layout_editor_absoluteY="208dp" />
+
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center_horizontal"
+            >
+
+
+<!--            <RadioGroup-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+
+<!--                >-->
+
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/UserRadioButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Normal User" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/DoctorRadioButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Doctor" />-->
+
+
+<!--            </RadioGroup>-->
+
+<!--            <RadioGroup-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                >-->
+<!--                <RadioButton-->
+<!--                    android:id="@+id/PharmacistRadioButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Pharmacist" />-->
+
+<!--                <RadioButton-->
+<!--                    android:id="@+id/PathologistRadioButton"-->
+<!--                    android:layout_width="match_parent"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:text="Pathologist" />-->
+<!--            </RadioGroup>-->
+
+        </LinearLayout>
+
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            >
+
+            <RadioButton
+                android:id="@+id/PharmacistRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pharmacist"
+                android:layout_margin="5dp"/>
+
+            <RadioButton
+                android:id="@+id/PathologistRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Pathologist"
+                android:layout_margin="5dp"/>
+            <RadioButton
+                android:id="@+id/UserRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="User"
+                android:layout_margin="5dp"/>
+            <RadioButton
+                android:id="@+id/DoctorRadioButton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Doctor"
+                android:layout_margin="5dp"/>
+
+        </RadioGroup>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="click to continue"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/newUser"
+            android:text="New User ? "
+            android:layout_gravity="end"/>
+
+
+
+
+
+    </LinearLayout>
+
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
