@@ -8,7 +8,12 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.HealthAI">
+        android:theme="@style/Theme.Design.Light.NoActionBar">
+        <activity android:name=".NewUserActivity"></activity>
+        <activity android:name=".Doctor.DoctorActivity" />
+        <activity android:name=".Pathologist.PathologistActivity" />
+        <activity android:name=".Pharmacist.PharmacistActivity" />
+        <activity android:name=".User.UserActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
