@@ -100,12 +100,18 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:id="@+id/newUser"
+            android:textSize="20sp"
             android:text="New User ? "
+
+            android:textColor="#FF0000"
             android:layout_gravity="end"/>
 <Button
-    android:layout_width="wrap_content"
+    android:layout_gravity="center_horizontal"
+    android:layout_width="match_parent"
     android:layout_height="wrap_content"
-    android:id="@+id/LoginButton"/>
+    android:text="click to continue"
+    android:id="@+id/LoginButton"
+    android:backgroundTint="#00FFFF"/>
 
 
 

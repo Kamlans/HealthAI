@@ -7,7 +7,7 @@
     tools:context=".NewUserActivity">
 
     <LinearLayout
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
         app:layout_constraintBottom_toBottomOf="parent"
@@ -35,9 +35,11 @@
 
 
         <RadioGroup
+            android:paddingTop="15dp"
+            android:layout_gravity="center_horizontal"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:orientation="horizontal"
+            android:orientation="vertical"
             android:padding="10dp"
             android:id="@+id/MainActivityRadioGroup"
             >

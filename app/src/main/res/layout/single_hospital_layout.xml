@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout
+<androidx.cardview.widget.CardView
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/teal_200"
+    android:layout_margin="20dp"
+    android:elevation="@dimen/cardview_compat_inset_shadow"
+    android:backgroundTint="#D3D3D3"
+    >
 
 
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_gravity="center_vertical"
-        android:id="@+id/hospitalImage"
-        android:src="@drawable/ic_launcher_background"/>
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -19,18 +19,27 @@
         android:orientation="vertical"
         android:layout_gravity="center_vertical"
         android:layout_margin="15dp">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/hospitalImage"
+            android:src="@drawable/ic_launcher_background"/>
         <TextView
+            android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Name of Hospital"
             android:id="@+id/hospitalName"/>
 
         <TextView
+            android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Location"
             android:id="@+id/hospitalLocation"/>
         <TextView
+            android:layout_gravity="center_horizontal"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Emergency call"
@@ -38,8 +47,11 @@
 
         <RatingBar
             android:id="@+id/hospitalRatingBar"
-            android:layout_width="match_parent"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:numStars="5"
+            android:stepSize="0.5"
 
             />
 
@@ -47,4 +59,4 @@
     </LinearLayout>
 
 
-</LinearLayout>
+</androidx.cardview.widget.CardView>
