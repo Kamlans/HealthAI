@@ -9,7 +9,11 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.Design.Light.NoActionBar">
-        <activity android:name=".NewUserActivity"></activity>
+        <activity android:name=".Profiles.PhathologistProfile"></activity>
+        <activity android:name=".Profiles.ChemistProfile" />
+        <activity android:name=".Profiles.DoctorProfile" />
+        <activity android:name=".Profiles.UserProfile" />
+        <activity android:name=".NewUserActivity" />
         <activity android:name=".Doctor.DoctorActivity" />
         <activity android:name=".Pathologist.PathologistActivity" />
         <activity android:name=".Pharmacist.PharmacistActivity" />
